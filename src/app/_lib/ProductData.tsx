@@ -15,7 +15,6 @@ export default function () {
       detail: "Apple iPhone 14 Pro Max 128GB Deep Purple (MQ9T3RX/A)",
       price: "$900",
       icon: <IoMdHeartEmpty />,
-      icon: <IoMdHeartEmpty />,
     },
     {
       image: product2,
