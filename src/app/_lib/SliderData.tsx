@@ -13,6 +13,7 @@ export default function SliderData() {
       color: "bg-[#F9F9F9]",
       textColor: "text-black",
       border: "border-black",
+      translate: "-translate-x-[0]",
     },
     {
       title: "ipad pro",
@@ -22,6 +23,7 @@ export default function SliderData() {
       color: "bg-[#F9F9F9]",
       textColor: "text-black",
       border: "border-black",
+      translate: "-translate-x-[100%]",
     },
     {
       title: "SamsungGalaxy",
@@ -31,6 +33,7 @@ export default function SliderData() {
       color: "bg-[#EAEAEA]",
       textColor: "text-black",
       border: "border-black",
+      translate: "-translate-x-[200%]",
     },
     {
       title: "Macbook Pro",
@@ -40,6 +43,7 @@ export default function SliderData() {
       color: "bg-[#2C2C2C]",
       textColor: "text-white",
       border: "border-white",
+      translate: "-translate-x-[300%]",
     },
   ];
 

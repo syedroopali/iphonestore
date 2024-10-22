@@ -1,40 +1,28 @@
 "use client";
 
 import Image from "next/image";
-import dots from "/public/dots.png";
 import SliderData from "../_lib/SliderData";
 import { useState } from "react";
 
 export default function Slider() {
   const data = SliderData();
   const [sliderIndex, setSliderIndex] = useState(0);
+  const translate = data.map((obj) => obj.translate);
 
-  const translate = [
-    "-translate-x-[0]",
-    "-translate-x-[100%]",
-    "-translate-x-[200%]",
-    "-translate-x-[300%]",
-  ];
-
-  const handleIndex = function () {
-    if (sliderIndex < data.length - 1) {
-      setSliderIndex(sliderIndex + 1);
-    } else {
-      setSliderIndex(0);
-    }
-  };
-
-  setInterval(() => handleIndex(), 3000);
+  setInterval(() => {
+    sliderIndex < data.length - 1
+      ? setSliderIndex(sliderIndex + 1)
+      : setSliderIndex(0);
+  }, 3000);
 
   return (
     <section className={`mb-[7rem]`}>
-      <div className="flex overflow-hidden w-[21rem] mx-auto ">
+      <div className="flex sm:grid md:grid-cols-2 xl:grid-cols-4 items-center justify-items-center overflow-hidden w-[21rem] md:w-auto mx-auto gap-y-4">
         {data.map((d, i) => (
           <div
             key={i}
-            className={`${d.color} ${translate[sliderIndex]} transition-all duration-500`}
+            className={`${d.color} ${translate[sliderIndex]} sm:translate-x-0 transition-all duration-500 md:w-[21rem] `}
           >
-            {/* //////////////////////////////////// */}
             <div
               className={`flex items-center justify-center mx-auto w-[21rem] h-[20.7rem] `}
             >
@@ -59,7 +47,6 @@ export default function Slider() {
               >
                 shop now
               </button>
-              <Image src={dots} alt="slider dots" className="w-[3.69rem] " />
             </div>
           </div>
         ))}

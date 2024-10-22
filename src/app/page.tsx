@@ -7,10 +7,10 @@ import Slider from "@/app/_components/Slider";
 export default function Page() {
   return (
     <>
-      <Hero />
-      <Featured />
-      <Category />
-      <Products />
+      {/* <Hero /> */}
+      {/* <Featured /> */}
+      {/* <Category /> */}
+      {/* <Products /> */}
       <Slider />
     </>
   );
