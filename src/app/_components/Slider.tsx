@@ -1,6 +1,6 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import dots from "/public/dots.png";
 import SliderData from "../_lib/SliderData";
 import { useState } from "react";
@@ -29,8 +29,9 @@ export default function Slider() {
   return (
     <section className={`mb-[7rem]`}>
       <div className="flex overflow-hidden w-[21rem] mx-auto ">
-        {data.map((d) => (
+        {data.map((d, i) => (
           <div
+            key={i}
             className={`${d.color} ${translate[sliderIndex]} transition-all duration-500`}
           >
             {/* //////////////////////////////////// */}

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import productData from "@/app/_lib/ProductData";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { ReactElement } from "react";
 
 export default function Products() {
