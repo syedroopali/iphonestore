@@ -1,6 +1,6 @@
 import Link from "next/link";
 import productData from "@/app/_lib/ProductData";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { ReactElement } from "react";
 
 export default function Products() {
@@ -62,7 +62,12 @@ function ProductCard({
         </button>
 
         <div className="mb-2 xl:mb-3">
-          <Image src={image} alt="" className="w-[6.5rem] xl:w-[10rem]" />
+          <Image
+            placeholder="blur"
+            src={image}
+            alt=""
+            className="w-[6.5rem] xl:w-[10rem]"
+          />
         </div>
         <div className="overflow-hidden h-12">
           <h3 className="text-base font-medium leading-6 -tracking-wide text-center">

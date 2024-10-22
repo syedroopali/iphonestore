@@ -14,6 +14,7 @@ export default function Featured() {
           <div className="h-full flex md:basis-[23.43rem] items-center justify-center flex-col xl:flex-row py-[2.5rem] xl:py-0 bg-[#EDEDED] overflow-hidden">
             <div className=" flex flex-col items-center justify-center  mb-6 lg:mb-0">
               <Image
+                placeholder="blur"
                 src={featuredImg4}
                 alt="featuredImg4"
                 className="w-48 xl:w-auto xl:h-[17rem] xl:-translate-x-52"
@@ -36,6 +37,7 @@ export default function Featured() {
           <div className="h-full flex md:basis-[23.43rem] items-center justify-center flex-col xl:flex-row py-[2.5rem] xl:py-0 bg-[#353535] overflow-hidden">
             <div className="w-[20.31rem] flex flex-col items-center justify-center  mb-6 xl:mb-0 ">
               <Image
+                placeholder="blur"
                 src={featuredImg3}
                 alt="featuredImg3"
                 className="xl:-translate-x-52"
@@ -58,6 +60,7 @@ export default function Featured() {
           <div className="flex md:basis-[23.43rem] xl:h-[20.5rem] items-center justify-center flex-col lg:flex-row py-[2.5rem] xl:py-0 bg-[#fff] overflow-hidden">
             <div className=" flex flex-col items-center justify-center  mb-6 lg:mb-0">
               <Image
+                placeholder="blur"
                 src={featuredImg2}
                 alt="featuredImg3"
                 className=" w-[12rem] lg:w-[14rem]  xl:w-[49rem] xl:translate-y-1 xl:-translate-x-24"
@@ -82,6 +85,7 @@ export default function Featured() {
           <div className="h-full flex items-center justify-center flex-col lg:flex-row-reverse py-[2.5rem] xl:py-0 bg-[#EDEDED] overflow-hidden">
             <div className="flex flex-col items-center justify-center mb-4 lg:mb-0 xl:-mr-96">
               <Image
+                placeholder="blur"
                 src={featuredImg1}
                 alt="featuredImg3"
                 className="w-[16.9375rem] lg:w-[35rem] lg:h-[20rem] xl:h-[35.75rem] xl:w-[70rem] "
