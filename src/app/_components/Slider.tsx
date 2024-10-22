@@ -22,7 +22,7 @@ export default function Slider() {
 
   return (
     <section>
-      <div className="flex items-center justify-center mx-auto w-[20.06rem] h-[20.7rem] ">
+      <div className="flex items-center justify-center mx-auto w-[20.06rem] h-[20.7rem]">
         <Image
           src={images[sliderIndex]}
           alt="image"
