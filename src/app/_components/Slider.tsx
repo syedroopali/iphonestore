@@ -9,11 +9,14 @@ export default function Slider() {
   const [sliderIndex, setSliderIndex] = useState(0);
   const translate = data.map((obj) => obj.translate);
 
-  setInterval(() => {
-    sliderIndex < data.length - 1
-      ? setSliderIndex(sliderIndex + 1)
-      : setSliderIndex(0);
-  }, 3000);
+  const handleIndex = function () {
+    if (sliderIndex < data.length - 1) {
+      setSliderIndex(sliderIndex + 1);
+    } else {
+      setSliderIndex(0);
+    }
+  };
+  setInterval(() => handleIndex(), 3000);
 
   return (
     <section className={`mb-[7rem]`}>
