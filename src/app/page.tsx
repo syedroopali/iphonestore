@@ -7,7 +7,7 @@ import Slider from "@/app/_components/Slider";
 export default function Page() {
   return (
     <>
-      {/* <Hero /> */}
+      <Hero />
       <Featured />
       <Category />
       <Products />
