@@ -21,7 +21,7 @@ export default function Slider() {
         {data.map((d, i) => (
           <div
             key={i}
-            className={`${d.color} ${translate[sliderIndex]} sm:translate-x-0 transition-all duration-500 md:w-[21rem] `}
+            className={`${d.color} ${translate[sliderIndex]} sm:translate-x-0 transition-all duration-500 md:w-[21rem] xl:w-full`}
           >
             <div
               className={`flex items-center justify-center mx-auto w-[21rem] h-[20.7rem] `}
