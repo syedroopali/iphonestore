@@ -8,7 +8,7 @@ import product7 from "/public/productImages/product7.png";
 import product8 from "/public/productImages/product8.png";
 import { IoMdHeartEmpty } from "react-icons/io";
 
-export default function () {
+export default function prouductData() {
   const productData = [
     {
       image: product1,
