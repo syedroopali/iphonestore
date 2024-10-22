@@ -18,7 +18,7 @@ export default function Slider() {
     }
   };
 
-  setInterval(() => handleSlider(), 2000);
+  setInterval(() => handleSlider(), 5000);
 
   return (
     <section>
