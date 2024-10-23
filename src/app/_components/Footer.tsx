@@ -1,10 +1,9 @@
-import Logo from "@/app/_components/Logo";
-import footerLogo from "/public/footerLogo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { FaTwitter, FaTiktok } from "react-icons/fa";
+import { FaTiktok, FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
+import footerLogo from "/public/footerLogo.png";
 
 const linkDataServices = [
   {
