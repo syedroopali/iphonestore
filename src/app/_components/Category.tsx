@@ -47,7 +47,7 @@ export default function Category() {
     <section className="p-4 mb-[7.5rem] max-w-[70rem] mx-auto">
       <div>
         <div className="flex items-center justify-between mb-12">
-          <h2 className="text-2xl font-medium"> By Category </h2>
+          <h2 className="text-2xl font-medium">Browse By Category </h2>
 
           <div className="flex items-center gap-4">
             <Link href="#">
