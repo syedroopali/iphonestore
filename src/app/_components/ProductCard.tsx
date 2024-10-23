@@ -34,7 +34,7 @@ export default function ProductCard({
           </h3>
         </div>
 
-        <p className="text-2xl mt-3 mb-2 font-semibold">${price[0]} </p>
+        <p className="text-2xl mt-3 mb-4 font-semibold">${price[0]} </p>
         <div>
           <Link
             href={`/products/${id}`}

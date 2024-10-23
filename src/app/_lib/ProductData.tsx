@@ -20,6 +20,12 @@ export default function prouductData() {
         "bg-[#facc15]",
         "bg-[#4ade80]",
         "bg-[#3b82f6]",
+        "bg-[#efaccd]",]
+      colors: [
+        "bg-[#ef4444]",
+        "bg-[#facc15]",
+        "bg-[#4ade80]",
+        "bg-[#3b82f6]",
         "bg-[#efaccd]",
       ],
       memory: ["128GB", "256GB", "512GB", "1TB"],
@@ -61,42 +67,84 @@ export default function prouductData() {
       image: product2,
       detail: "Blackmagic Pocket Cinema Camera 6k",
       price: [900, 800],
+      colors: [
+        "bg-[#ef4444]",
+        "bg-[#facc15]",
+        "bg-[#4ade80]",
+        "bg-[#3b82f6]",
+        "bg-[#efaccd]",]
     },
     {
       id: 2,
       image: product3,
       detail: "Apple Watch Series 9 GPS 41mm Starlight Aluminium Case",
       price: [1000, 950],
+      colors: [
+        "bg-[#ef4444]",
+        "bg-[#facc15]",
+        "bg-[#4ade80]",
+        "bg-[#3b82f6]",
+        "bg-[#efaccd]",0
     },
     {
       id: 3,
       image: product4,
       detail: "AirPods Max Silver",
       price: [750, 600],
+      colors: [
+        "bg-[#ef4444]",
+        "bg-[#facc15]",
+        "bg-[#4ade80]",
+        "bg-[#3b82f6]",
+        "bg-[#efaccd]",]
     },
     {
       id: 4,
       image: product5,
       detail: "Samsung Galaxy Watch6 Classic 47mm Black",
       price: [900, 850],
+      colors: [
+        "bg-[#ef4444]",
+        "bg-[#facc15]",
+        "bg-[#4ade80]",
+        "bg-[#3b82f6]",
+        "bg-[#efaccd]",]
     },
     {
       id: 5,
       image: product6,
       detail: "Galaxy Z Fold5 Unlocked | 256GB | Phantom Black",
       price: [900, 850],
+      colors: [
+        "bg-[#ef4444]",
+        "bg-[#facc15]",
+        "bg-[#4ade80]",
+        "bg-[#3b82f6]",
+        "bg-[#efaccd]",]
     },
     {
       id: 6,
       image: product7,
       detail: "Galaxy Buds FEGraphite",
       price: [900],
+      colors: [
+        "bg-[#ef4444]",
+        "bg-[#facc15]",
+        "bg-[#4ade80]",
+        "bg-[#3b82f6]",
+        "bg-[#efacc,d]",
     },
     {
       id: 7,
       image: product8,
       detail: "Apple iPad 9 10.2 64GB Wi-Fi Silver (MK2L3) 2021",
       price: [500],
+      colors: [
+        "bg-[#ef4444]",
+        "bg-[#facc15]",
+        "bg-[#4ade80]",
+        "bg-[#3b82f6]",
+        "bg-[#efacc,d]",
     },
   ];
 

@@ -87,8 +87,11 @@ export default function Page({ params }: { params: { productid: string } }) {
           <div>
             <h1 className="font-bold text-4xl mb-6">{title}</h1>
             <p className="text-[2rem] font-medium flex items-center gap-x-4 mb-4">
-              ${price[1]}{" "}
-              <s className="text-[#A0A0A0] text-[1.5rem] "> ${price[0]}</s>
+              ${price[1] ? price[1] : price[0]}{" "}
+              <s className="text-[#A0A0A0] text-[1.5rem] ">
+                {" "}
+                {price[1] ? `$${price[0]}` : ""}
+              </s>
             </p>
           </div>
 

@@ -5,7 +5,6 @@ import Featured from "@/app/_components/Featured";
 import Hero from "@/app/_components/Hero";
 import Products from "@/app/_components/Products";
 import Slider from "@/app/_components/Slider";
-import Heart from "./_components/Heart";
 
 export default function Page() {
   return (
