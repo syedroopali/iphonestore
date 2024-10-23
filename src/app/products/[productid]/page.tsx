@@ -22,13 +22,13 @@ export default function Page({ params }: { params: { productid: string } }) {
         <div className="mb-8">
           <Image src={image} alt="product image" className="w-[16.44rem]" />
         </div>
-        <div className="mb-[2.3125rem]  ">
+        {/* <div className="mb-[2.3125rem]  ">
           <Image
             src={productMulitImage}
             alt="image"
             className="w-[21.44rem] "
           />
-        </div>
+        </div> */}
 
         <div className="mb-4">
           <div className="flex gap-6 items-center mb-6">
