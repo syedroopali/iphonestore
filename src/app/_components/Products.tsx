@@ -35,7 +35,6 @@ export default function Products() {
             detail={d.detail}
             price={d.price}
             id={d.id}
-            icon={d.icon}
           />
         ))}
       </div>

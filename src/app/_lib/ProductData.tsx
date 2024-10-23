@@ -6,7 +6,6 @@ import product5 from "/public/productImages/product5.png";
 import product6 from "/public/productImages/product6.png";
 import product7 from "/public/productImages/product7.png";
 import product8 from "/public/productImages/product8.png";
-import { IoMdHeartEmpty } from "react-icons/io";
 
 export default function prouductData() {
   const productData = [
@@ -48,7 +47,6 @@ export default function prouductData() {
       ],
       description:
         "Enhanced capabilities thanks toan enlarged display of 6.7 inchesand work without rechargingthroughout the day. Incredible photosas in weak, yesand in bright lightusing the new systemwith two cameras",
-      icon: <IoMdHeartEmpty />,
       reviews: {
         excellent: 249,
         good: 150,
@@ -62,50 +60,43 @@ export default function prouductData() {
       id: 1,
       image: product2,
       detail: "Blackmagic Pocket Cinema Camera 6k",
-      price: "$2535",
-      icon: <IoMdHeartEmpty />,
+      price: [900, 800],
     },
     {
       id: 2,
       image: product3,
       detail: "Apple Watch Series 9 GPS 41mm Starlight Aluminium Case",
-      price: "$399",
-      icon: <IoMdHeartEmpty />,
+      price: [1000, 950],
     },
     {
       id: 3,
       image: product4,
       detail: "AirPods Max Silver",
-      price: "$549",
-      icon: <IoMdHeartEmpty />,
+      price: [750, 600],
     },
     {
       id: 4,
       image: product5,
       detail: "Samsung Galaxy Watch6 Classic 47mm Black",
-      price: "$369",
-      icon: <IoMdHeartEmpty />,
+      price: [900, 850],
     },
     {
       id: 5,
       image: product6,
       detail: "Galaxy Z Fold5 Unlocked | 256GB | Phantom Black",
-      price: "$1799",
-      icon: <IoMdHeartEmpty />,
+      price: [900, 850],
     },
     {
       id: 6,
       image: product7,
       detail: "Galaxy Buds FEGraphite",
-      price: "$99.99",
-      icon: <IoMdHeartEmpty />,
+      price: [900],
     },
     {
       id: 7,
       image: product8,
       detail: "Apple iPad 9 10.2 64GB Wi-Fi Silver (MK2L3) 2021",
-      price: "$398",
-      icon: <IoMdHeartEmpty />,
+      price: [500],
     },
   ];
 

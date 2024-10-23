@@ -11,7 +11,6 @@ export default function Products() {
           image={product.image}
           price={product.price}
           detail={product.detail}
-          icon={product.icon}
           id={product.id}
         />
       ))}

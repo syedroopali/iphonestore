@@ -1,26 +1,24 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { ReactElement } from "react";
+import Heart from "./Heart";
 
 export default function ProductCard({
   image,
   detail,
   price,
-  icon,
   id,
 }: {
   image: StaticImageData;
   detail: string;
   price: string | number[];
-  icon: ReactElement;
   id: number;
 }) {
   return (
     <>
       <div className="bg-[#F6F6F6] h-[22rem] xl:h-[27rem] w-[10.28rem] sm:w-[12.2rem] md:w-[14.4rem] xl:w-[16.2rem] flex flex-col items-center justify-center px-2 xl:px-4 py-6 rounded-[0.5625rem] hover:shadow-sm hover:-translate-y-1 xl:hover:-translate-y-2 xl:hover:shadow-lg transition-all duration-300">
-        <button className="ml-auto text-[2rem] xl:text-4xl text-[#909090] mb-2  cursor-pointer">
-          {icon}
-        </button>
+        <div className="ml-auto text-[2rem] xl:text-4xl text-[#909090] mb-2  cursor-pointer">
+          <Heart />
+        </div>
 
         <div className="mb-2 xl:mb-3">
           <Image
