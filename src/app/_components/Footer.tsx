@@ -62,7 +62,7 @@ const linkDataAssistance = [
 export default function Footer() {
   return (
     <footer className="bg-[#181313] px-8 py-12 max-w-[90rem] ">
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 items-center sm:items-start justify-items-center max-w-[70rem] ">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 items-center sm:items-start justify-items-center max-w-[70rem] mx-auto">
         <div className="mb-8">
           <div className="w-[4.09rem] mx-auto md:mx-0 mb-4">
             <Image src={footerLogo} placeholder="blur" alt="cyber logo" />
