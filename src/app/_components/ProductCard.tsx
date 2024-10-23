@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import { ReactElement } from "react";
 
 export default function ProductCard({
@@ -6,11 +7,13 @@ export default function ProductCard({
   detail,
   price,
   icon,
+  id,
 }: {
   image: StaticImageData;
   detail: string;
-  price: string;
+  price: string | number[];
   icon: ReactElement;
+  id: number;
 }) {
   return (
     <>
@@ -33,11 +36,14 @@ export default function ProductCard({
           </h3>
         </div>
 
-        <p className="text-2xl mt-3 mb-2 font-semibold">{price} </p>
+        <p className="text-2xl mt-3 mb-2 font-semibold">${price[0]} </p>
         <div>
-          <button className="text-sm text-white py-4 xl:py-[0.9rem] px-10 xl:px-[4rem] bg-black rounded-lg  hover:text-[#ddd] transition-all">
+          <Link
+            href={`/products/${id}`}
+            className="text-sm text-white py-4 xl:py-[0.9rem] px-10 xl:px-[4rem] bg-black rounded-lg  hover:text-[#ddd] transition-all"
+          >
             Buy Now
-          </button>
+          </Link>
         </div>
       </div>
     </>

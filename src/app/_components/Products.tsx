@@ -34,6 +34,7 @@ export default function Products() {
             image={d.image}
             detail={d.detail}
             price={d.price}
+            id={d.id}
             icon={d.icon}
           />
         ))}

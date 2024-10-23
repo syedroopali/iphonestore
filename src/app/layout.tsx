@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: "%s - Cyber",
     default: "Welcome to Cyber",
   },
-  description: "hackathon project- design from figma",
+  description: "Iphone store to get all the prodcuts related to iphone",
 };
 
 export default function RootLayout({
