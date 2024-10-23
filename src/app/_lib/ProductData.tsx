@@ -189,10 +189,10 @@ export default function prouductData() {
       memory: ["128GB", "256GB", "512GB", "1TB"],
       colors: [
         "bg-[#efaaaa]",
-        "bg-[#fa15]",
-        "bg-[#4e80]",
-        "bg-[#3b86]",
-        "bg-[#efac]",
+        "bg-[#fa1ee5]",
+        "bg-[#4e8550]",
+        "bg-[#3b1186]",
+        "bg-[#efa33c]",
       ],
     },
     {
