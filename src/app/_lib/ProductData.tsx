@@ -54,28 +54,6 @@ export default function prouductData() {
         "bg-[#3b82f6]",
         "bg-[#efaccd]",
       ],
-      specifications: [
-        ["Screen size", "6.7"],
-        ["CPU", "apple a16 bionic"],
-        ["Number of cores", "6"],
-        ["Main camera", "48-12-12 MP"],
-        ["Front camera", "12mp"],
-        ["Battery capacity", "4323 mAh"],
-        ["Screen resolution", "2796x1290"],
-        ["Screen refresh rate", "120 Hz"],
-        ["Pixel density", "460 ppi"],
-        ["Screen type", "OLED"],
-        [
-          "Additionally",
-          [
-            "dynamic islan",
-            "always on display",
-            "HDR display",
-            "ture tone",
-            "wide color (p3)",
-          ],
-        ],
-      ],
 
       category: "smart phone",
     },
