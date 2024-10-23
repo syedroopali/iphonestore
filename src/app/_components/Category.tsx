@@ -44,8 +44,8 @@ const categoryData = [
 
 export default function Category() {
   return (
-    <section className="p-4 mb-[7.5rem] max-w-[70rem] mx-auto">
-      <div>
+    <section className="mb-[3.5rem] max-w-[90rem] lg:h-[22rem] bg-[#FAFAFA] flex items-center justify-center py-[2rem] 2xl:py-0 ">
+      <div className="lg:w-[70rem]">
         <div className="flex items-center justify-between mb-12">
           <h2 className="text-2xl font-medium">Browse By Category </h2>
 

@@ -7,7 +7,7 @@ import featuredImg4 from "/public/featuredImg4.png";
 export default function Featured() {
   return (
     <>
-      <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[1fr_1fr_2fr] mb-16 ">
+      <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-[1fr_1fr_2fr]">
         {/* ////////////////////////////////////// */}
         <div className="xl:order-4">
           {/* ////////////////////////////////////// */}

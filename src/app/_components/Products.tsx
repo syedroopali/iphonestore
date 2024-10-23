@@ -5,7 +5,7 @@ import ProductCard from "./ProductCard";
 export default function Products() {
   const data = productData();
   return (
-    <section className="mb-[7rem] max-w-[70rem] mx-auto">
+    <section className="mb-[3.5rem] max-w-[70rem] mx-auto">
       <div className="flex items-center justify-center gap-6 sm:gap-8 w-[23rem] sm:w-[24.5rem] mx-auto md:mx-2 mb-8">
         <Link
           href={"/"}

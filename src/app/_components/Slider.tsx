@@ -19,7 +19,7 @@ export default function Slider() {
   setInterval(() => handleIndex(), 3000);
 
   return (
-    <section className={`mb-[7rem]`}>
+    <section className={`mb-[5rem]`}>
       <div className="flex sm:grid md:grid-cols-2 xl:grid-cols-4 items-center justify-items-center overflow-hidden w-[21rem] md:w-auto mx-auto gap-y-4">
         {data.map((d, i) => (
           <div
