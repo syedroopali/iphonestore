@@ -1,13 +1,21 @@
-import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
-import Image from "next/image";
 import productData from "@/app/_lib/ProductData";
+import Image from "next/image";
 import productMulitImage from "/public/productMulitImage.png";
 
-export default function Page({ params }: Params) {
+export async function generateMetadata({
+  params,
+}: {
+  params: { productid: string };
+}) {
+  const product = productData();
+  const title = product[Number(params.productid)];
+  return title;
+}
+
+export default function Page({ params }: { params: { productid: string } }) {
   const product = productData();
   const { image, title, price, colors, memory, specifications, description } =
-    product[params.productid];
-  const id = params.productid;
+    product[Number(params.productid)];
   return (
     <div className="w-full">
       <div className="w-[21.3125rem] grid items-center justify-items-center mx-auto">
@@ -41,7 +49,10 @@ export default function Page({ params }: Params) {
           <div className="mb-6">
             <ul className="flex items-center justify-between">
               {memory?.map((mem) => (
-                <li className="text-[0.875rem] font-medium text-[#D5D5D5] hover:text-black transition-all border-2 border-[#d5d5d5] hover:border-black w-[4.89rem] py-3 rounded-lg flex items-center justify-center">
+                <li
+                  key={mem}
+                  className="text-[0.875rem] font-medium text-[#D5D5D5] hover:text-black transition-all border-2 border-[#d5d5d5] hover:border-black w-[4.89rem] py-3 rounded-lg flex items-center justify-center"
+                >
                   {mem}
                 </li>
               ))}
@@ -50,8 +61,11 @@ export default function Page({ params }: Params) {
 
           <div className="mb-6">
             <ul className="flex items-center justify-between flex-wrap gap-y-4">
-              {specifications?.slice(0, 6).map((spec) => (
-                <li className="w-[10.4rem] h-[4rem] bg-[#F4F4F4] rounded-[0.44rem]  flex items-center ">
+              {specifications?.slice(0, 6).map((spec, i) => (
+                <li
+                  key={i}
+                  className="w-[10.4rem] h-[4rem] bg-[#F4F4F4] rounded-[0.44rem]  flex items-center "
+                >
                   <div className="px-[0.68rem] text-xl text-[#4E4E4E] ">#</div>
                   <div className="leading-4">
                     <p className="text-[0.875rem] font-normal text-[#C4C4C4] ">

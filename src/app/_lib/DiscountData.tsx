@@ -7,24 +7,28 @@ import discountImg4 from "/public/discountImages/discountImg4.png";
 export default function productData() {
   const productData = [
     {
+      id: 0,
       image: discountImg1,
       detail: "Apple iPhone 14 Pro 512GB Gold (MQ233)",
       price: "$900",
       icon: <IoMdHeartEmpty />,
     },
     {
+      id: 1,
       image: discountImg2,
       detail: "AirPods Max Silver",
       price: "$2535",
       icon: <IoMdHeartEmpty />,
     },
     {
+      id: 1,
       image: discountImg3,
       detail: "Apple Watch Series 9 GPS 41mm Starlight Aluminium Case",
       price: "$399",
       icon: <IoMdHeartEmpty />,
     },
     {
+      id: 1,
       image: discountImg4,
       detail: "Apple iPhone 14 Pro 1TB Gold (MQ2V3)",
       price: "$549",

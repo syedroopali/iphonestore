@@ -10,6 +10,7 @@ export default function Discount() {
       <div className="grid grid-cols-2 items-center justify-items-center gap-4 sm:grid-cols-3 lg:grid-cols-4">
         {data.map((d, i) => (
           <ProductCard
+            id={d.id}
             key={i}
             image={d.image}
             detail={d.detail}
