@@ -1,6 +1,5 @@
 import productData from "@/app/_lib/ProductData";
 import Image from "next/image";
-import productMulitImage from "/public/productMulitImage.png";
 
 export async function generateMetadata({
   params,
