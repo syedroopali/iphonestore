@@ -16,20 +16,17 @@ export default function Page({ params }: { params: { productid: string } }) {
   const { image, title, price, colors, memory, specifications, description } =
     product[Number(params.productid)];
   return (
-    <div className="w-full">
-      <div className="w-[21.3125rem] grid items-center justify-items-center mx-auto">
-        <div className="mb-8">
-          <Image src={image} alt="product image" className="w-[16.44rem]" />
-        </div>
-        {/* <div className="mb-[2.3125rem]  ">
+    <div className="w-full md:my-8">
+      <div className="w-[21.3125rem] md:w-full md:max-w-[70rem] grid md:grid-cols-2 items-center justify-items-center  mx-auto">
+        <div className="mb-8 md:mb-0">
           <Image
-            src={productMulitImage}
-            alt="image"
-            className="w-[21.44rem] "
+            src={image}
+            alt="product image"
+            className="w-[16.44rem] md:w-[28rem] "
           />
-        </div> */}
+        </div>
 
-        <div className="mb-4">
+        <div className="mb-4 flex flex-col md:mb-0">
           <div className="flex gap-6 items-center mb-6">
             <p className="text-[#0C0C0C] font-normal">Select color: </p>
             <ul className="flex gap-3">
@@ -46,11 +43,11 @@ export default function Page({ params }: { params: { productid: string } }) {
             </ul>
           </div>
           <div className="mb-6">
-            <ul className="flex items-center justify-between">
+            <ul className="flex items-center justify-between md:gap-2">
               {memory?.map((mem) => (
                 <li
                   key={mem}
-                  className="text-[0.875rem] font-medium text-[#D5D5D5] hover:text-black transition-all border-2 border-[#d5d5d5] hover:border-black w-[4.89rem] py-3 rounded-lg flex items-center justify-center"
+                  className="text-[0.875rem] font-medium text-[#D5D5D5] hover:text-black transition-all border-2 border-[#d5d5d5] hover:border-black w-[4.89rem] md:w-full py-3 rounded-lg flex items-center justify-center"
                 >
                   {mem}
                 </li>
@@ -83,7 +80,7 @@ export default function Page({ params }: { params: { productid: string } }) {
             </p>
           </div>
 
-          <div>
+          <div className="md:-order-1">
             <h1 className="font-bold text-4xl mb-6">{title}</h1>
             <p className="text-[2rem] font-medium flex items-center gap-x-4 mb-4">
               ${price[1] ? price[1] : price[0]}{" "}
@@ -94,7 +91,7 @@ export default function Page({ params }: { params: { productid: string } }) {
             </p>
           </div>
 
-          <div className="flex flex-col gap-4 mb-8">
+          <div className="flex flex-col md:flex-row gap-4 mb-8">
             <button className="w-full py-4 border-2 border-black text-black text-base font-medium rounded-md hover:bg-black hover:text-white hover:border-white transition-all">
               Add to Wish List
             </button>
